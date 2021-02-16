@@ -1,0 +1,57 @@
+
+
+h2{
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Baloo Tamma 2', cursive;
+  font-size: 100px;
+  color: white;
+}
+
+
+.image img {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+h3{
+  position: absolute;
+  top: 50%;
+  
+  transform: translate(-50%, -50%);
+  font-family: 'Baloo Tamma 2', cursive;
+  font-size: 80px;
+  color: white;
+}
+
+#temp-text{
+  left: 40%;
+}
+
+#hum-text{
+  left: 60%;
+}
+
+#content{
+  display: flexbox;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  .image img {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
